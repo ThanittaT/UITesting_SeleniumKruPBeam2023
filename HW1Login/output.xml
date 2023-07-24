@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on darwin)" generated="20230712 21:31:02.905" rpa="false" schemaversion="4">
+<suite id="s1" name="HW1Login Muitnita1737 20230619" source="/Users/thanittat/Desktop/HW1Login_Muitnita1737gmail_2023.06.19/HW1Login_Muitnita1737_20230619.robot">
+<test id="s1-t1" name="TC001-Open Login Page(default)" line="67">
+<kw name="Open WebBrowser KruPBeam">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230712 21:31:02.968" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/login/'.</msg>
+<status status="PASS" starttime="20230712 21:31:02.968" endtime="20230712 21:31:10.015"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230712 21:31:10.015" endtime="20230712 21:31:10.464"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230712 21:31:10.464" endtime="20230712 21:31:10.465"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Welcome to Kru P' Beam!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230712 21:31:10.465" endtime="20230712 21:31:10.682"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:02.968" endtime="20230712 21:31:10.683"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:10.683" endtime="20230712 21:31:11.130"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:11.130" endtime="20230712 21:31:11.570"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_btn-login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:11.571" endtime="20230712 21:31:12.004"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_linkRegister}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:12.005" endtime="20230712 21:31:12.445"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230712 21:31:12.445" endtime="20230712 21:31:12.713"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:02.967" endtime="20230712 21:31:12.714"/>
+</test>
+<test id="s1-t2" name="TC002-Login_PASS" line="75">
+<kw name="Open WebBrowser KruPBeam">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230712 21:31:12.716" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/login/'.</msg>
+<status status="PASS" starttime="20230712 21:31:12.715" endtime="20230712 21:31:15.172"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230712 21:31:15.173" endtime="20230712 21:31:15.780"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230712 21:31:15.781" endtime="20230712 21:31:15.782"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Welcome to Kru P' Beam!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230712 21:31:15.782" endtime="20230712 21:31:16.005"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:12.715" endtime="20230712 21:31:16.006"/>
+</kw>
+<kw name="Input Data for Login-Pass">
+<kw name="Set Variable" library="BuiltIn">
+<var>${passwordLogin}</var>
+<arg>${123456789}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230712 21:31:16.009" level="INFO">${passwordLogin} = 123456789</msg>
+<status status="PASS" starttime="20230712 21:31:16.008" endtime="20230712 21:31:16.009"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:16.009" endtime="20230712 21:31:16.452"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:16.453" endtime="20230712 21:31:16.894"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>user.test@krupbeam.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:16.896" level="INFO">Typing text 'user.test@krupbeam.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230712 21:31:16.895" endtime="20230712 21:31:17.655"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${passwordLogin}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:17.658" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg timestamp="20230712 21:31:18.105" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230712 21:31:18.378" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230712 21:31:17.656" endtime="20230712 21:31:18.379"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn-login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:18.380" level="INFO">Clicking element 'id=btn-login'.</msg>
+<status status="PASS" starttime="20230712 21:31:18.379" endtime="20230712 21:31:18.867"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Search Filter</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230712 21:31:18.867" endtime="20230712 21:31:19.492"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:16.007" endtime="20230712 21:31:19.493"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230712 21:31:19.493" endtime="20230712 21:31:19.758"/>
+</kw>
+<tag>Login</tag>
+<status status="PASS" starttime="20230712 21:31:12.714" endtime="20230712 21:31:19.758"/>
+</test>
+<test id="s1-t3" name="TC003-Login Invalid Email-FAIL" line="81">
+<kw name="Open WebBrowser KruPBeam">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230712 21:31:19.760" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/login/'.</msg>
+<status status="PASS" starttime="20230712 21:31:19.759" endtime="20230712 21:31:23.708"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230712 21:31:23.709" endtime="20230712 21:31:24.323"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230712 21:31:24.324" endtime="20230712 21:31:24.325"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Welcome to Kru P' Beam!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230712 21:31:24.325" endtime="20230712 21:31:24.544"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:19.759" endtime="20230712 21:31:24.545"/>
+</kw>
+<kw name="Input Email-Fail">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:24.546" endtime="20230712 21:31:24.988"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>iiioso1234วทหก</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:24.992" level="INFO">Typing text 'iiioso1234วทหก' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230712 21:31:24.989" endtime="20230712 21:31:25.749"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn-login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:25.750" level="INFO">Clicking element 'id=btn-login'.</msg>
+<status status="PASS" starttime="20230712 21:31:25.750" endtime="20230712 21:31:26.235"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_error-email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:26.235" endtime="20230712 21:31:26.670"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${errtxt_email}</var>
+<arg>${locator_error-email}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:27.111" level="INFO">${errtxt_email} = email must be a valid email</msg>
+<status status="PASS" starttime="20230712 21:31:26.671" endtime="20230712 21:31:27.111"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${errtxt_email}</arg>
+<arg>email must be a valid email</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230712 21:31:27.111" endtime="20230712 21:31:27.112"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:24.545" endtime="20230712 21:31:27.112"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230712 21:31:27.113" endtime="20230712 21:31:27.385"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:19.759" endtime="20230712 21:31:27.385"/>
+</test>
+<test id="s1-t4" name="TC004-Login Invalid Password-FAIL" line="86">
+<kw name="Open WebBrowser KruPBeam">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230712 21:31:27.387" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/login/'.</msg>
+<status status="PASS" starttime="20230712 21:31:27.386" endtime="20230712 21:31:31.059"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230712 21:31:31.059" endtime="20230712 21:31:31.671"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230712 21:31:31.671" endtime="20230712 21:31:31.672"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Welcome to Kru P' Beam!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230712 21:31:31.673" endtime="20230712 21:31:31.895"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:27.386" endtime="20230712 21:31:31.895"/>
+</kw>
+<kw name="Input Password-Fail">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:31.896" endtime="20230712 21:31:32.341"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${passwordFail}</var>
+<arg>123</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230712 21:31:32.342" level="INFO">${passwordFail} = 123</msg>
+<status status="PASS" starttime="20230712 21:31:32.341" endtime="20230712 21:31:32.342"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${passwordFail}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:32.344" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg timestamp="20230712 21:31:32.801" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230712 21:31:33.093" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230712 21:31:32.342" endtime="20230712 21:31:33.093"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn-login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:33.095" level="INFO">Clicking element 'id=btn-login'.</msg>
+<status status="PASS" starttime="20230712 21:31:33.093" endtime="20230712 21:31:33.578"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_error-password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:33.578" endtime="20230712 21:31:34.018"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${errtxt_password}</var>
+<arg>${locator_error-password}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:34.459" level="INFO">${errtxt_password} = password must be at least 5 characters</msg>
+<status status="PASS" starttime="20230712 21:31:34.019" endtime="20230712 21:31:34.459"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${errtxt_password}</arg>
+<arg>password must be at least 5 characters</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230712 21:31:34.460" endtime="20230712 21:31:34.460"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:31.896" endtime="20230712 21:31:34.460"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230712 21:31:34.461" endtime="20230712 21:31:34.781"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:27.386" endtime="20230712 21:31:34.781"/>
+</test>
+<test id="s1-t5" name="TC005-Login for Non-membership-PASS" line="91">
+<kw name="Open WebBrowser KruPBeam">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230712 21:31:34.783" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/login/'.</msg>
+<status status="PASS" starttime="20230712 21:31:34.782" endtime="20230712 21:31:39.006"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230712 21:31:39.006" endtime="20230712 21:31:39.618"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230712 21:31:39.619" endtime="20230712 21:31:39.620"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Welcome to Kru P' Beam!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230712 21:31:39.620" endtime="20230712 21:31:39.844"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:34.782" endtime="20230712 21:31:39.844"/>
+</kw>
+<kw name="Link Register-Hyperlink_CreateNewAccount">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_linkRegister}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:39.846" endtime="20230712 21:31:40.285"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_linkRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:40.287" level="INFO">Clicking element 'css=#__next &gt; div.layout-wrapper.MuiBox-root.css-33gw4 &gt; div &gt; div &gt; div.MuiBox-root.css-15tnlg1 &gt; div &gt; div &gt; form &gt; div.MuiBox-root.css-z0xj7h &gt; p.MuiTypography-root.MuiTypography-body1.css-azsy9a &gt; a'.</msg>
+<status status="PASS" starttime="20230712 21:31:40.285" endtime="20230712 21:31:40.756"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230712 21:31:40.757" endtime="20230712 21:31:40.972"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:39.845" endtime="20230712 21:31:40.972"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230712 21:31:40.973" endtime="20230712 21:31:41.238"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:34.782" endtime="20230712 21:31:41.238"/>
+</test>
+<test id="s1-t6" name="TC006-Login with MissingFields-FAIL" line="96">
+<kw name="Open WebBrowser KruPBeam">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230712 21:31:41.240" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/login/'.</msg>
+<status status="PASS" starttime="20230712 21:31:41.239" endtime="20230712 21:31:46.737"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230712 21:31:46.737" endtime="20230712 21:31:47.347"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230712 21:31:47.347" endtime="20230712 21:31:47.349"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Welcome to Kru P' Beam!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230712 21:31:47.349" endtime="20230712 21:31:47.572"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:41.239" endtime="20230712 21:31:47.572"/>
+</kw>
+<kw name="Verify Input Data-Missing Field">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:47.572" endtime="20230712 21:31:48.017"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:48.018" endtime="20230712 21:31:48.463"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:48.467" level="INFO">Typing text '' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230712 21:31:48.464" endtime="20230712 21:31:49.157"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:49.160" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg timestamp="20230712 21:31:49.602" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230712 21:31:49.862" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230712 21:31:49.157" endtime="20230712 21:31:49.862"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn-login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:49.863" level="INFO">Clicking element 'id=btn-login'.</msg>
+<status status="PASS" starttime="20230712 21:31:49.862" endtime="20230712 21:31:50.338"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_error-email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:50.338" endtime="20230712 21:31:50.773"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${errMissingEmail}</var>
+<arg>${locator_error-email}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:51.212" level="INFO">${errMissingEmail} = email is a required field</msg>
+<status status="PASS" starttime="20230712 21:31:50.773" endtime="20230712 21:31:51.213"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_error-password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 21:31:51.213" endtime="20230712 21:31:51.651"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${errMissingPassword}</var>
+<arg>${locator_error-password}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230712 21:31:52.081" level="INFO">${errMissingPassword} = password must be at least 5 characters</msg>
+<status status="PASS" starttime="20230712 21:31:51.651" endtime="20230712 21:31:52.081"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${errMissingEmail}</arg>
+<arg>email is a required field</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230712 21:31:52.082" endtime="20230712 21:31:52.082"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${errMissingPassword}</arg>
+<arg>password must be at least 5 characters</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230712 21:31:52.083" endtime="20230712 21:31:52.083"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:47.572" endtime="20230712 21:31:52.083"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230712 21:31:52.084" endtime="20230712 21:31:52.350"/>
+</kw>
+<status status="PASS" starttime="20230712 21:31:41.239" endtime="20230712 21:31:52.350"/>
+</test>
+<status status="PASS" starttime="20230712 21:31:02.906" endtime="20230712 21:31:52.351"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Login</stat>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="HW1Login Muitnita1737 20230619">HW1Login Muitnita1737 20230619</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
